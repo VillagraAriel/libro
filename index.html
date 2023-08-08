@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/stilo.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Libros recomendados</h1>
+        <nav class="container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="inicio">
+        <h2>RECOMENDACIONES</h2>
+        <p>Estos libros son los mas recomendadospara el aprendizaje en programacion.</p>
+        <a href="https://articulo.mercadolibre.com.ar/MLA-1121295782-book-microsoft-visual-c-step-by-step-developer-_JM#position=2&search_layout=stack&type=item&tracking_id=6f56e277-9cb1-49cd-9757-a666417de8a0" target="_blank">
+        <img src="img/descarga (1).jpg" alt="Imagen de ejemplo"></a>
+        <a href="https://openlibra.com/es/lists/id/EVaqYV" target="_blank">
+        <img src="img/python2.jpg" alt="Python para todos"></a>
+        <a href="https://www.elsolucionario.org/introduccion-a-la-programacion-manual-del-desarrollador-users-juan-carlos-casale-1ra-edicion/">
+        <img src="img/descarga (5).jpg" alt="Introduccion a la programacion"></a>
+        </a>
+        <a href="https://www.mercadolibre.com.ar/html-y-css-como-nunca-antes-se-lo-habian-contado-de-dominguez-minguez-tomas-editorial-alfaomega-marcombo-tapa-blanda-edicion-1ra-edicion-en-espanol/p/MLA24810170?pdp_filters=category:MLA412445#searchVariation=MLA24810170&position=2&search_layout=stack&type=product&tracking_id=7f06c033-efc7-4b01-98ed-60b9b4ca7b6b" target="_blank">
+        <img src="img/images.jpg" alt="Python para todos"></a>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de imágenes</h2>
+        <div class="book">
+
+            <a href="python.html">
+            <img src="img/python2.jpg" alt="PYTHON"> </a>          
+            
+            <a href="intro.html">
+            <img src="img/descarga (4).jpg" alt="Introduccion a la programacion"></a>
+            
+            <a href="programacion.html">
+            <img src="img/descarga (5).jpg" alt="programacion"></a>
+            
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="video-container">
+            <video controls>
+                <source class="vid1" src="/libro.mp4" type="video/mp4">
+                Tu navegador no admite el elemento video.
+            </video>
+        </div>
+        <div class="video-container">
+            <iframe width="760" height="315" src="https://www.youtube.com/embed/sRKgA-1Xq88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>¿Qué tipo te gusta más?</label>
+            <label><input type="radio" name="contenido" value="libros"> Back-end</label>
+            <label><input type="radio" name="contenido" value="peliculas"> Front-end</label>
+            <label><input type="radio" name="contenido" value="series"> Full Stack</label>
+
+            <label for="codigo">Codigo favorito:</label>
+            <input list="codigo" name="Codigo" required>
+            <datalist id="codigo">
+                <option value="Python">
+                <option value="Java">
+                <option value="HTML">
+                <option value="Css">
+                <option value="Go">
+                <option value=".Net">
+                <option value="C">
+                <option value="C++">
+                <option value="Javascript">
+            </datalist>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2023 - Proyecto PPII</p>
+    </footer>
+</body>
+</html>
